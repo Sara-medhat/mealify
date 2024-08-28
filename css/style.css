@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+
+:root {
+    --jiji: rgb(230, 20, 20);
+}
+
+
+.main-title {
+    margin: 50px, 10.9px;
+    padding: 40px, 5px;
+    text-align: center;
+}
+
+.main-title h2 {
+    padding-top: 30px;
+    color: #7f7f90;
+    font-weight: 400;
+   
+    font: 14px "inter", sans-serif;
+    text-transform: uppercase;
+
+}
+
+.main-title p {
+    font-size: 3.125rem;
+    font-family: "Amatic SC", sans-serif;
+}
+
+.main-title span {
+    color: var(--jiji);
+}
+.chefs-card .card {
+  width: auto;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: inherit;
+    text-align: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    animation-duration: 400ms;
+    transition: scale 400ms;
+}
+
+.chefs-cards {
+
+    gap: 1.85rem;
+   padding-block: 1.25rem;
+   display: flex;
+    flex-wrap:nowrap;
+}
+ .card:hover{
+    transform: scale(1.07);
+
+
+
+}
+
+
+.chefs-cards .card img {
+    position: relative;
+    width: 100%;
+  }
+  
+  
+  .card{
+    overflow: hidden;
+  }
+  
+  .chefs-cards .card img:before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url("../imags/team-shape.svg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 3.75rem;
+  }
+  
+  .chefs-cards .card-content {
+    padding: 1.5625rem;
+    padding-top: 0.625rem;
+  }
+  *******************************
+  .chefs-cards .card span {
+    font-size: 0.875rem;
+    margin-block: 0.3125rem 0.625rem;
+  }
+
+
+  .card-content{
+    text-align: center;
+  }
+  .card-content span , P{
+      color: rgb(127, 127, 144);
+    
+  }
+  .card-content h3{
+    font-size: 18.2px;
+  }
+  .chefs-cards .card p{
+    /* padding-top: 15PX; */
+    text-align: center;
+    font-size: 0.9375rem;
+    font-style: italic;
+  }
+  .chefs-cards .social-box {
+
+    background-color: #ffffff4d;
+    width: fit-content;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    position: absolute;
+    top: 1.875rem;
+    right: -3.125rem;
+
+  }
+  
+  .chefs-cards .card:hover .social-box {
+    right: 0.625rem;
+    transition: right 400ms 400ms;
+  }
+  
+  .chefs-cards .social-box i {
+    font-size: 1.125rem;
+    padding: 0.625rem 0.3125rem;
+    color: #37373f66;
+    transition: color 400ms;
+  }
+  
+  .chefs-cards .social-box i:hover {
+    color: #37373fe6;
+  }
+  /* /////////////////////////////////////////////////////////////////////////////// */
+
+  .details {
+    background-image: linear-gradient(#0009, #0009),
+      url(../imags/textured-metal-background.jpg);
+    color: #fff;
+    box-shadow: 0px -1px 5px #0007;
+    background-size: contain;
+  }
+  
+  .details .container {
+    --gap: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.07em;;  }  
+  
+  
+ 
+  
+  .details .about div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  
+  .details .about p {
+    margin-block: 0.625rem;
+  }
+  
+  .details .about img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .details .about h3 {
+    text-align: center;
+    padding: 0.625rem;
+    border-bottom: 2px solid #ddd6;
+    margin-bottom: 0.625rem;
+  }
+  
+  .details .about .social-links {
+    padding: 0.625rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .details .about .social-links i {
+    font-size: 1.5rem;
+  }
+  
+  .details .sub-box p {
+    margin-block: 0.625rem;
+  }
+  
+  .details .eml-group {
+    margin-block: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .details .eml-group input {
+    flex-grow: 1;
+    padding: 0.625rem;
+  }
+  
+  .details .eml-group input:focus-visible {
+    outline: none;
+  }
+  .eml-group button{
+    color: white;
+    background-color: var(--jiji);
+  }
+  
+ 
+  
+  .details .quick-links ul {
+    --gap: 1.25rem;
+    margin-top: 0.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:70px;
+  }
+  
+  .details .quick-links ul li {
+    padding: 5px;
+    position: relative;
+    transition: transform (400ms),
+      background-color var(--animation-duration);
+  }
+  
+  .details .quick-links ul li:hover {
+    transform: translateX(10px);
+    background-color: #222;
+  }
+  
+  .details .quick-links ul li::before {
+    content: "\f105";
+    font: var(--fa-font-solid);
+    margin-right: 5px;
+  }
+  
+  .details .contact  .details h3 {
+    margin-bottom: 10px;
+  }
+  
+  .details .contact .details ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  
+  
+  .contact-details i{
+    color: var(--jiji);
+  }
+  .details a{
+    color: white;
+  }
+  
+
+  .details .about {
+    width: 25%;
+  padding-right: 15px;
+}
+  .details .sub{
+      width: 42%;
+    }
+
+    .details .quick-links{
+      width: 100%;
+    }
+
+    
+    
+    .details {
+      width: 100%;
+    }

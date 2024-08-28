@@ -1,0 +1,7 @@
+
+
+@media screen and (max-width: 768px) {
+ .chefs-cards .card {
+    width: 100%;
+  }
+}
